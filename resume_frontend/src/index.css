@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PRINT SETTINGS */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  .btn {
+    display: none !important;
+  }
+
+  /* 👇 MAIN FIX (1 page force) */
+ .resume-print {
+  transform: scale(0.9);     /* 👈 size bada kar diya */
+  transform-origin: top left;
+  width: 111%;
+}
+
+  div, section {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, p, li, span {
+    color: black !important;
+  }
+}
+
+/* A4 SIZE FIX */
+@page {
+  size: A4;
+  margin: 10mm;
+}
