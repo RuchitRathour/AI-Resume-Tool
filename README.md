@@ -1,15 +1,12 @@
-# AI-Resume-Tool
-AI-powered resume generator built using Java, Spring Boot, Spring AI, and REST APIs.
-
 # AI Resume Tool
 
 An AI-powered Resume Generator built using Java, Spring Boot, Spring AI, React, and REST APIs. It helps users generate professional resumes quickly with AI assistance.
 
-## 🚀 Live Demo
+##  Live Demo
 
-🔗 ai-resume-ruchit.netlify.app
+🔗 https://ai-resume-ruchit.netlify.app
 
-## ✨ Features
+##  Features
 
 * AI-powered resume generation
 * Responsive and user-friendly UI
@@ -18,7 +15,7 @@ An AI-powered Resume Generator built using Java, Spring Boot, Spring AI, React, 
 * Spring Boot backend
 * Download professional resumes
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -32,16 +29,37 @@ An AI-powered Resume Generator built using Java, Spring Boot, Spring AI, React, 
 * React
 * Vite
 * Tailwind CSS
+  
+🏗 Architecture
+                +--------------------+
+                |     React Frontend |
+                +----------+---------+
+                           |
+                           | HTTP Requests
+                           ▼
+                +--------------------+
+                | Spring Boot Backend |
+                +----------+---------+
+                           |
+                           | Spring AI
+                           ▼
+                +--------------------+
+                |     AI Model/API    |
+                +--------------------+
+📂 Project Structure
+AI-Resume-Generator
+│
+├── resume_frontend
+│     ├── src
+│     ├── public
+│     └── package.json
+│
+└── resume-ai-backend
+      ├── src/main/java
+      ├── src/main/resources
+      └── pom.xml
 
-## 📂 Project Structure
-
-```
-AI-Resume-Tool
-├── resume-ai-backend
-└── resume_frontend
-```
-
-## ⚙️ Installation
+##  Installation
 
 ### Backend
 
@@ -58,9 +76,9 @@ npm install
 npm run dev
 ```
 
-## 👨‍💻 Author
+##  Author
 
-**Ruchit Rathour**
+**Ruchit Kumar**
 
 GitHub: https://github.com/RuchitRathour
 
